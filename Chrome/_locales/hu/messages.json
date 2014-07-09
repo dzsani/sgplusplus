@@ -1,0 +1,21 @@
+{
+	"extName": {
+		"message": "SG PlusPlus",
+		"description": "Full name of the extension"
+	},
+
+	"extShortName": {
+		"message": "SG++",
+		"description": "Short name of the extension"
+	},
+
+	"extDescription": {
+		"message": "SG Redesign",
+		"description": "Description of the extension"
+	},
+
+	"extAuthor": {
+		"message": "Viszt Péter (passatgt), Gera János (Ability)",
+		"description": "Author(s) of the extension"
+	}
+}

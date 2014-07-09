@@ -1,0 +1,40 @@
+{
+
+	"name": "__MSG_extName__",
+	"short_name": "__MSG_extShortName__",
+	"version": "0.1.1",
+	"description": "__MSG_extDescription__",
+	"author": "__MSG_extAuthor__",
+
+	"manifest_version": 2,
+	"default_locale": "hu",
+	"minimum_chrome_version": "22",
+
+	// "icons": { 
+	// 	"16": "/img/icon16.png",
+	// 	"48": "/img/icon48.png",
+	// 	"128": "/img/icon128.png"
+	// },
+
+	"background": {
+		"scripts": ["/js/eventPage.js"],
+		"persistent": false
+	},
+
+	"permissions": [
+		"*://*.sg.hu/*"
+	],
+
+	"content_scripts": [{
+		"matches": ["*://*.sg.hu/*"],
+		"run_at": "document_start",
+		"all_frames": false,
+		
+		"css": ["/css/skin.css"],
+		"js": []
+	}],
+
+	"web_accessible_resources": [
+
+	]
+}
