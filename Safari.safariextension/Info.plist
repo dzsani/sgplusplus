@@ -24,6 +24,7 @@
 		<dict/>
 		<key>Stylesheets</key>
 		<array>
+			<string>css/font-awesome.min.css</string>
 			<string>css/skin.css</string>
 		</array>
 	</dict>
