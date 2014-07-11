@@ -30,11 +30,14 @@
 		"run_at": "document_start",
 		"all_frames": false,
 		
-		"css": ["/css/skin.css"],
+		"css": ["/css/font-awesome.min.css", "/css/skin.css"],
 		"js": []
 	}],
 
 	"web_accessible_resources": [
-
+		"/fonts/fontawesome-webfont.eot",
+		"/fonts/fontawesome-webfont.svg",
+		"/fonts/fontawesome-webfont.ttf",
+		"/fonts/fontawesome-webfont.woff"
 	]
 }
