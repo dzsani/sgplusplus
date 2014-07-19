@@ -26,7 +26,7 @@
 	],
 
 	"content_scripts": [{
-		"matches": ["*://*.sg.hu/*"],
+		"matches": ["*://*.sg.hu/"],
 		"run_at": "document_start",
 		"all_frames": false,
 		
