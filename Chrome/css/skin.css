@@ -1,6 +1,6 @@
 html body {
 	background: #eef1f3;
-	padding: 1px 0 0 0;
+	padding: 0px 0 0 0;
 	font-weight:normal;
 }
 
@@ -17,12 +17,13 @@ body #header-top {
 
 body #menu-family {
 	position: absolute;
-	width: 1120px;
-	left: 50%;
 	margin: 0 -560px;
-	height: 24px;
 	padding: 0px;
 	font-size: 0px;
+	width: 1120px;
+	left: 50%;
+	height: 24px;
+	background: none;
 }
 
 body #menu-family span {
@@ -179,7 +180,18 @@ body #search-top-filter label {
 }
 
 body #content {
+	width: 1120px;
+	background: none;
+}
+
+body.home #content {
 	width: auto;
+	margin: 0 auto;
+}
+
+body #content #heading {
+	width: 1120px;
+	margin: 0 auto;
 }
 
 body #article-featured {
@@ -198,7 +210,7 @@ body #article-featured .article-title {
 	left: 0px;
 	right: 0px;	
 	background: #fff;
-	height: 151px;
+	height: 151px !important;
 	border-top: 4px solid;
 }
 
@@ -262,7 +274,7 @@ body #article-main .article-title:after {display: none;}
 
 body .article-block .article-title {
 	padding: 0;
-	height: auto;
+	height: auto !important;
 	line-height: normal !important;
 }
 
@@ -424,6 +436,7 @@ body #article-main .article-list a {
 	background: #fff;
 	float: left;
 	border-left: 4px solid;
+	transition: all ease-in-out 0.3s;
 }
 
 body #article-main .article-list a h5 {
@@ -433,6 +446,7 @@ body #article-main .article-list a h5 {
 	overflow: hidden;
 	white-space: nowrap;
 	margin-right: 40px;
+	transition: all ease-in-out 0.3s;
 }
 
 body #article-main .article-list a h5 span {
@@ -458,7 +472,7 @@ body #article-main .article-list a:after {
 body #article-main .article-list a:before {
 	position: absolute;
 	right: 20px;
-
+	transition: all ease-in-out 0.3s;
 }
 
 body #article-main .article-list a.blue-plus-icon:before {content:'IT / Tech';color:#1eb8e4;}
@@ -470,6 +484,17 @@ body #article-main .article-list a.blue-plus-icon {border-color: #1eb8e4;}
 body #article-main .article-list a.green-plus-icon {border-color: #b9e860;}
 body #article-main .article-list a.cyan-plus-icon {border-color: #4ac0b1;}
 body #article-main .article-list a.yellow-plus-icon{border-color: #f4d738;}
+
+body #article-main .article-list a.blue-plus-icon:hover {background: #1eb8e4;}
+body #article-main .article-list a.green-plus-icon:hover {background: #b9e860;}
+body #article-main .article-list a.cyan-plus-icon:hover {background: #4ac0b1;}
+body #article-main .article-list a.yellow-plus-icon:hover {background: #f4d738;}
+
+
+body #article-main .article-list a:hover h5,
+body #article-main .article-list a:hover:before {
+	color: #fff;
+}
 
 body #article-main, body .cat-column {
 	width: 1120px;
@@ -499,9 +524,46 @@ body #news-main .news-block:nth-child(2) {
 body #news-main .advert {
 	position: absolute;
 	left: 50%;
-	width: 740px;
+	width: 740px !important;
 	bottom: 20px;
 	margin: 0 0 0 -560px !important;
+	border: none;
+	background: #fff;
+}
+
+body #news-main .advert .frame {width: auto !important;height: auto !important;}
+body #news-main .advert .frame-inner {position: relative;}
+
+body #news-main .advert.adpr img {margin: 20px;}
+body #news-main .advert.adpr h6 {
+	margin: 20px 0 0 0;
+	color: #322f39;
+	font-size: 18px;
+}
+
+body #news-main .advert.adpr p {
+	color: #586062;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0 0 0 100px;
+}
+
+body #news-main .fb-like-box {
+	width: 360px !important;
+	background: #fff;
+	float: none;
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	margin: 0 0 0 200px;
+}
+
+body #news-main .fb-like-box > span {
+	width: 360px !important; 
+}
+
+body #news-main .fb-like-box > span iframe {
+	width: 360px !important;
 }
 
 body #news-main .news-block header {
@@ -545,3 +607,218 @@ body .link-blocks a.more {
 	text-align: left;
 	color: rgba(88,95,97,0.4)
 }
+
+body .headers-big {
+	margin: 0px;
+	border-bottom-width: 4px;
+}
+
+body .headers-big h3 {
+	font-size: 25px;
+	font-weight: normal;
+	color: #586062;
+}
+
+body .headers-big h3 a:after {
+	font-size: 14px;
+	color: #8f9496;
+	font-style: italic;
+	border-bottom: 1px dotted #cbcdcf;
+	margin: 0 0 0 25px;
+}
+
+body .headers-big h3 a:hover {
+	text-decoration: none;
+}
+
+body .blue-border-bottom.headers-big h3 a:after {content: 'Még több IT / Tech hír';}
+body .green-border-bottom.headers-big h3 a:after {content: 'Még több Tudomány hír';}
+body .cyan-border-bottom.headers-big h3 a:after {content: 'Még több Film hír';}
+body .yellow-border-bottom.headers-big h3 a:after {content: 'Még több Játék hír';}
+
+body .pull-left,body .pull-right {
+	background: #fff;
+}
+
+body .pull-left {
+	margin-right: 20px !important;
+}
+
+body .cat-column {
+	margin: 0 auto 30px auto;
+}
+
+body .cat-column .article-block .article-title {
+	border: none;
+	height: auto !important;
+	width: auto !important;
+}
+
+body .cat-column .article-block .article-title:before {
+	display: none;
+}
+
+body .cat-column .article-block .article-title img {
+	width: 100%;
+	height: auto;
+	border: none;
+}
+
+body .cat-column .article-block .article-title > h4, body .cat-column .article-block .article-title > h5 {
+	padding: 14px 20px 6px;
+}
+
+body .cat-column .article-block .article-title > span {
+	padding: 0 20px;
+	font-size: 14px;
+	color: #586062;
+	line-height: 24px;
+}
+
+body .cat-column .article-block .more {
+	display: none;
+}
+
+body .cat-column .article-block {
+	padding-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #eef1f3;
+	width: auto !important;
+	height: auto !important;
+	margin-right: 0px !important;
+}
+
+body .article-block .comments {
+	float: none;
+	padding: 0;
+	margin: 0 20px 0 20px;
+	height: auto;
+	line-height: normal;
+	font-style: normal;
+	font-size: 13px;
+}
+
+body .article-block .comments:before {
+	content: '\f075';
+	font-style: normal;
+	font-family: 'FontAwesome';
+	font-size: 18px;
+	color: #cdcfd0;
+	margin: 0 10px 0 0;
+}
+
+body .article-block .comments:hover {
+	background: none;
+	color: #777;
+}
+
+body .link-blocks a:after {display: none;}
+body .link-blocks a:hover {background: #1eb8e4}
+
+body .link-blocks.blue-plus-icon a:hover {background: #1eb8e4;}
+body .link-blocks.green-plus-icon a:hover {background: #b9e860;}
+body .link-blocks.cyan-plus-icon a:hover {background: #4ac0b1;}
+body .link-blocks.yellow-plus-icon a:hover {background: #f4d738;}
+
+
+/* v1 */
+body .cat-column.var-1 > .pull-left {width: 740px;}
+body .cat-column.var-1 > .pull-right {width: 360px;}
+
+/* v2 */
+body .cat-column.var-2 > .pull-left, body .cat-column.var-2 > .pull-right {width: 360px;}
+body .cat-column.var-2 > .pull-right .article-title {height: auto;}
+body .cat-column.var-2 > .pull-right .article-block-3 {margin: 0;}
+
+/* v3 */
+body .cat-column.var-3 .article-block .article-title {height: auto;}
+body .cat-column.var-3 > .pull-left {width: 265px;}
+body .cat-column.var-3 > .pull-right {width: 265px;}
+
+/* v4 */
+body .cat-column.var-4 > .pull-left {width: 265px;}
+body .cat-column.var-4 > .pull-right {width: 265px;}
+body .cat-column.var-4 > .pull-left:first-of-type {width:550px;}
+body .cat-column.var-4 .article-block-1 {width: auto;margin-right: 0;padding-bottom:0}
+body .cat-column.var-4 .article-block-1 a img {float: left;width:275px;}
+body .cat-column.var-4 .article-block-1 h4, body .cat-column.var-4 .article-block-1 span {width: 235px;}
+body .cat-column.var-4 .article-block-1 a.comments {margin-left: 295px;}
+body .cat-column.var-4 .article-block-1 .article-title {height: auto;}
+body .cat-column.var-4 .article-block-1 .article-title:after {display: none;}
+
+/* v5 */
+body .cat-column.var-5 > .pull-left {width: 360px;}
+body .cat-column.var-5 > .pull-right {width: 360px;}
+
+/* v6 */
+body .cat-column.var-6 > .pull-left {width: 455px;}
+body .cat-column.var-6 > .pull-right {width: 645px;}
+
+/* Kategória oldal */
+body #content #heading #sidebar {
+	width: 360px;
+}
+
+body #content #heading-left,
+body #content #heading-last {
+	width: 740px;
+}
+
+body #heading .article-block .article-title img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+body #footer {
+	width: 100%;
+}
+
+body #footer-top {
+	height: 40px;
+}
+
+body #footer-bottom {
+	height: 40px;
+}
+
+body #footer nav a {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	transition: all ease-in-out 0.3s;
+	margin: 0;
+	padding: 0 15px;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(255,255,255,0.85);
+}
+
+body #footer .page-center {
+	width: 1120px;
+}
+
+body #footer nav a:hover {
+	background: #282828;
+	text-decoration: none;
+}
+
+body #footer .contact,
+body #footer .copyright {
+	margin: 0 20px 0 20px;
+	position: relative;
+	color: rgba(255,255,255,0.6);
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	left: 0px;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+
+body #footer .copyright  {float: right;}
