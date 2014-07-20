@@ -1,10 +1,10 @@
 var self = require('sdk/self');
-var pageMod = require("sdk/page-mod");
+var pageMod = require('sdk/page-mod');
 
 pageMod.PageMod({
-	include: "http://sg.hu/",
-	contentScriptWhen: "start",
-	attachTo: ["existing", "top"],
+	include: 'http://sg.hu/',
+	contentScriptWhen: 'start',
+	attachTo: ['existing', 'top'],
 	contentStyleFile: [
 		self.data.url('css/font-awesome.min.css'),
 		self.data.url('css/skin.css')
