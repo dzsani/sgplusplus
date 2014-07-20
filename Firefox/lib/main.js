@@ -2,7 +2,7 @@ var self = require('sdk/self');
 var pageMod = require("sdk/page-mod");
 
 pageMod.PageMod({
-	include: "*.sg.hu",
+	include: "http://sg.hu/",
 	contentScriptWhen: "start",
 	attachTo: ["existing", "top"],
 	contentStyleFile: [
