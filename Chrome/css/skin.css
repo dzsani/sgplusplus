@@ -180,18 +180,8 @@ body #search-top-filter label {
 }
 
 body #content {
-	width: 1120px;
-	background: none;
-}
-
-body.home #content {
 	width: auto;
-	margin: 0 auto;
-}
-
-body #content #heading {
-	width: 1120px;
-	margin: 0 auto;
+	background: none;
 }
 
 body #article-featured {
@@ -753,23 +743,6 @@ body .cat-column.var-5 > .pull-right {width: 360px;}
 /* v6 */
 body .cat-column.var-6 > .pull-left {width: 455px;}
 body .cat-column.var-6 > .pull-right {width: 645px;}
-
-/* Kategória oldal */
-body #content #heading #sidebar {
-	width: 360px;
-}
-
-body #content #heading-left,
-body #content #heading-last {
-	width: 740px;
-}
-
-body #heading .article-block .article-title img {
-	width: 100%;
-	height: auto;
-}
-
-
 
 
 
