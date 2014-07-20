@@ -27,6 +27,10 @@
 			<string>css/font-awesome.min.css</string>
 			<string>css/skin.css</string>
 		</array>
+		<key>Whitelist</key>
+		<array>
+			<string>http://sg.hu/</string>
+		</array>
 	</dict>
 	<key>Description</key>
 	<string>Provides enhanced appearance for the popular Hungarian website SG.hu.</string>
