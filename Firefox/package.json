@@ -3,6 +3,8 @@
   "title": "SG++",
   "id": "jid1-xZGPRm5uFAr5cw",
   "description": "Provides enhanced appearance for the popular Hungarian website SG.hu.",
+  "icon": "data/img/icon48.png",
+  "icon64": "data/img/icon64.png",
   "author": "Peter Viszt & John Gera",
   "license": "MIT",
   "version": "0.1.0"
