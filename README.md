@@ -7,7 +7,7 @@ Az SG++ egy kiserleti projekt az oldal megjelenesenek tovabbfejlesztesere, illet
 * Gera Janos aka _dzsani_,_Ability_
 * [lasd meg](https://github.com/dzsani/sgplusplus/graphs/contributors)
 
-Tovabbi kozremukodok jeletkezeset szivesen varjuk! A kod szabadon felhasznalhato barki altal, reszletek a [LICENSE](/dzsani/sgplusplus) fajlban.
+Tovabbi kozremukodok jeletkezeset szivesen varjuk! A kod szabadon felhasznalhato barki altal, reszletek a [LICENSE](/dzsani/sgplusplus/blob/master/LICENSE) fajlban.
 
 ## Telepites:
 
